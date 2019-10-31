@@ -12,8 +12,6 @@ import org.objectweb.asm.ClassReader;
 import org.objectweb.asm.ClassWriter;
 import org.objectweb.asm.tree.ClassNode;
 
-import java.io.FileOutputStream;
-import java.io.IOException;
 import java.util.Arrays;
 import java.util.Collection;
 
@@ -55,14 +53,6 @@ public class ClassTransformer implements IClassTransformer {
         } catch (Throwable t) {
             LOGGER.error("Exception when transforming " + transformedName + " : " + t.getClass().getSimpleName());
             t.printStackTrace();
-        }
-
-        try {
-            FileOutputStream outputStream = new FileOutputStream("C:\\Users\\Jack\\Desktop\\projects\\Sk1erLLC\\CrossChat\\bytecode\\Bytecode.class");
-            outputStream.write(writer.toByteArray());
-            outputStream.close();
-        } catch (IOException e) {
-            e.printStackTrace();
         }
 
         return writer.toByteArray();
