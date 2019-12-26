@@ -1,0 +1,18 @@
+[
+  {
+    "modid": "cross_chat",
+    "name": "CrossChat",
+    "description": "CrossChat adds the ability to keep your previous chat when switching servers.",
+    "version": "${version}",
+    "mcversion": "${mcversion}",
+    "url": "",
+    "updateUrl": "",
+    "authorList": [
+      "Sk1er LLC"
+    ],
+    "credits": "",
+    "logoFile": "",
+    "screenshots": [],
+    "dependencies": []
+  }
+]

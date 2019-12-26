@@ -25,7 +25,9 @@ public class ClassTransformer implements IClassTransformer {
     }
 
     private void registerTransformer(Transformer transformer) {
-        Arrays.stream(transformer.getClassName()).forEach(cls -> transformerMap.put(cls, transformer));
+        for (String cls : transformer.getClassName()) {
+            transformerMap.put(cls, transformer);
+        }
     }
 
     @Override
