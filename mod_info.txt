@@ -1,1 +1,3 @@
+<p><b>This has been superseded by <a href="https://sk1er.club/mods/patcher">Patcher.</a></b></p>
+<br>
 <p>CrossChat adds the ability to keep your previous chat when switching servers.</p>
